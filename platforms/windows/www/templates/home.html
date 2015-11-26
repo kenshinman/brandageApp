@@ -1,0 +1,41 @@
+﻿<ion-view view-title="Brandage">
+  <ion-content>
+      <ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="doRefresh()">
+        
+      </ion-refresher>
+        
+                
+                <!--div id="slides">
+                    <div ng-repeat = "post in posts | limitTo : 3">
+                        <img ng-src="{{post.featured_image.source}}" width="100%" height="auto"/> 
+                    
+                    </div>
+                
+                </div>-->
+            <div class="card" rn-carousel class="image">
+                <div class="item" ng-repeat = "post in posts track by post.ID | limitTo : 3">
+                  <img ng-src="{{post.featured_image.source}}" width="100%" height="auto"/> 
+                </div>
+
+            </div> 
+      
+    
+            
+        
+      
+<!--      posts lists   -->
+        <div class="list">
+            <a class="item item-thumbnail-left item-text-wrap item-icon-left" ng-repeat="post in posts | orderBy: '-date'" href="#app/single/{{posts.indexOf(post)}}">
+
+                <img ng-src="{{post.featured_image.attachment_meta.sizes.thumbnail.url}}"  imageonload/><span class="loading" style="float:left;position:relative; margin-left:10px; margin-top:-65px;"> <img src="img/drawable-xxhdpi-icon.png" width="60"/></span>
+            <h2 ng-bind-html="post.title | uppercase" ></h2>
+                <p ng-bind-html="post.excerpt | limitTo : 50" class="left"></p>
+                <p style="float:right; font-style:italic;">{{post.date | fromNow}}<br></p>
+            </a>
+            
+        </div>    
+          
+  </ion-content>
+</ion-view>

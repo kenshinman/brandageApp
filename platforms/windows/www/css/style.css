@@ -1,0 +1,77 @@
+﻿/* Empty. Add your own CSS if you like */
+
+.left[
+float:left;
+]
+p .mright[
+float:right !important;
+]
+
+img{
+    float: left;
+    /*max-width: 95%;*/
+    /*margin-right: 10px;*/
+}
+
+body{
+    font-family: Open Sans Condensed, Raleway, roboto;
+}
+ .card .item{
+    padding-bottom: 40px !important;
+}
+.small{
+    font-size: 11px;
+}
+.card a{
+    text-decoration:none;
+}
+.home-thumb{
+    width:80px;
+    /*float: left;*/
+    height:80px;
+    margin-right: 7px;
+    border:1px solid #999999;
+    border-radius:6px;
+}
+
+.spinner-hide .loading{
+    visibility: visible;
+}
+
+.spinner-show .loading{
+    visibility: hidden;
+}
+
+p{
+    font-size: 18px;
+    /*float: left;*/
+}
+
+.padded{
+    padding: 10px;
+}
+
+/*.slider{
+    position:relative !important;
+}*/
+
+.slide-title{
+    background-color: rgba(0,0,0,0.75);
+    height: auto;
+    padding: 10px 5px;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /*color: #ffffff;*/
+}
+
+.slide-title h4{
+    color:#ffffff;
+}
+
+.wrapping-list .item-content, .wrapping-list .item {
+    overflow: initial;
+    white-space: initial;
+}
